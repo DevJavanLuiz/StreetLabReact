@@ -1,0 +1,14 @@
+.picture-item {
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  animation-delay: 5s;
+}
+
+.picture-item img {
+  object-fit: contain;
+
+  width: 100%;
+  height: 100%;
+}
