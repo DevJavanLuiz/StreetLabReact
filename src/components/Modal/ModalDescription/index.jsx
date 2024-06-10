@@ -69,7 +69,7 @@ export default function ModalDescription({
           <div class="talk-me">
             <Link
               target="_blank"
-              to={`https://api.whatsapp.com/send?phone=558189100968&text=Oi quero comprar uma camisa da cor ${color}`}
+              to={`https://api.whatsapp.com/send?phone=558188550476&text=Cobaia001: Gostaria de obter a(o) ${name} que está custando ${price} com a cor ${color}!`}
             >
               Comprar!
             </Link>
