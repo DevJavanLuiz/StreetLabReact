@@ -2,22 +2,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
-import produtos from "../../../assets/DB/produtos";
 import Modal from "../ModalBase";
 import "./style.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function ModalDescription({
   isOpen,
   setIsOpen,
   price,
   description,
-  size,
+  sizes = [],
   types = [],
   name,
 }) {
   const [color, setColor] = useState("");
+  const [sizeSelected, setSizeSelected] = useState("");
+
+  function validSend() {
+    if (!sizeSelected) return toast.info("Selecione um tamanho!");
+    if (!color) return toast.info("Selecione uma cor!");
+
+    window.open(
+      `https://api.whatsapp.com/send?phone=558188550476&text=Cobaia001: Gostaria de obter a(o) ${name} que está custando ${price} com a cor ${color} com tamanho ${sizeSelected}`,
+      "_blank"
+    );
+  }
 
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
@@ -66,13 +77,25 @@ export default function ModalDescription({
               );
             })}
           </div>
-          <div class="talk-me">
-            <Link
-              target="_blank"
-              to={`https://api.whatsapp.com/send?phone=558188550476&text=Cobaia001: Gostaria de obter a(o) ${name} que está custando ${price} com a cor ${color}!`}
-            >
-              Comprar!
-            </Link>
+          <div className="sizes">
+            {sizes.map((size) => {
+              return (
+                <div
+                  key={size}
+                  className={`size-product ${
+                    size === sizeSelected ? "size-product-selected" : ""
+                  } `}
+                  onClick={() => {
+                    setSizeSelected(size);
+                  }}
+                >
+                  {size}
+                </div>
+              );
+            })}
+          </div>
+          <div className="talk-me">
+            <button onClick={validSend}>Comprar</button>
           </div>
         </div>
       </div>

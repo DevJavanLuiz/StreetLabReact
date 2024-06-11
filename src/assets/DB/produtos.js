@@ -6,7 +6,7 @@ export default {
       preço: 99.99,
       descricao:
         "Camisa das ruas para deixar seu corre com estilo. Pano 100% algodão com fibra de cabra kkk",
-      tam: ["P", "M", "G", "GG"],
+      sizes: ["P", "M", "G", "GG"],
       types: [
         {
           name: "black",
@@ -37,7 +37,7 @@ export default {
       preço: 919.99,
       descricao:
         "Camisa das ruas para deixar seu corre com estilo. Pano 100% algodão com fibra de cabra kkk",
-      tam: ["P", "M", "G", "GG"],
+      sizes: ["P", "M", "G", "GG"],
       types: [
         {
           name: "black",
@@ -68,7 +68,7 @@ export default {
       preço: 1119.99,
       descricao:
         "Camisa das ruas para deixar seu corre com estilo. Pano 100% algodão com fibra de cabra kkk",
-      tam: ["P", "M", "G", "GG"],
+      sizes: ["P", "M", "G", "GG"],
       types: [
         {
           name: "black",

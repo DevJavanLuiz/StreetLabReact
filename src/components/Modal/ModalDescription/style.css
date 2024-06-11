@@ -38,3 +38,36 @@
 .color-product-selected {
   transform: scale(1.2);
 }
+
+.sizes {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.size-product {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(100, 169, 31);
+  margin-left: 10px;
+  border: 1px solid rgb(124, 252, 0);
+  background-color: rgba(128, 128, 128, 0.265);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.size-product:hover {
+  background-color: rgba(100, 169, 31, 0.366);
+}
+
+.size-product:focus {
+  background-color: rgba(100, 169, 31, 0.366);
+}
+
+div.size-product-selected {
+  background-color: #64a91f5d;
+}

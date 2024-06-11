@@ -38,6 +38,7 @@ function App() {
           name={modalContent?.nome}
           price={modalContent?.preço}
           types={modalContent?.types}
+          sizes={modalContent?.sizes}
         />
 
         <div className="grid-product">
