@@ -5,7 +5,7 @@ export default function NavBar() {
     <header>
       <nav>
         <div className="nav-image">
-          <img src="src/components/icons/Logo Sem fundo.png" alt="" />
+          <img src="src/components/icons/logo.png" alt="" />
         </div>
 
         <div className="nav-info">
