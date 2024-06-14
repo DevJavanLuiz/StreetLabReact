@@ -24,8 +24,8 @@
 
 button.btn-open {
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.616);
-  border: 1px solid rgb(117, 117, 117);
+  color: rgba(0, 0, 0, 0.836);
+  border: 1px solid rgb(0, 0, 0);
   transition: all 110ms ease-in;
   background-color: white;
   width: 100%;
