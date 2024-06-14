@@ -60,7 +60,9 @@ export default function ModalDescription({
         </div>
         <div className="info-item">
           <h2 className="name-product">{name}</h2>
-          <p>R${price}</p>
+          <h4 className="description">{description}</h4>
+          <p className="price-product">R${price}</p>
+          <p>COR</p>
           <div className="colors">
             {types.map((type) => {
               return (
@@ -77,6 +79,7 @@ export default function ModalDescription({
               );
             })}
           </div>
+          <p>TAM</p>
           <div className="sizes">
             {sizes.map((size) => {
               return (

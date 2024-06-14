@@ -3,15 +3,16 @@ export default function Footer() {
   return (
     <footer>
       <div className="content-footer">
-        <p>
-          <img src="./assets/img/phone-call.png" alt="" /> +55 81 9 9999-9999
-        </p>
-        <p>
-          <img src="./assets/img/logotipo-do-instagram.png" alt="" /> @streetlab
-        </p>
-        <p>
-          <img src="./assets/img/o-email.png" alt="" /> streetlab@gmail.com
-        </p>
+        <div className="imgs-text">
+          <img src="src/components/icons/telefone.png" alt="" />
+          <img src="src/components/icons/instagram.png" alt="" />
+          <img src="src/components/icons/o-email.png" alt="" />
+        </div>
+        <div className="text-footer">
+          <p>+55 81 9 9999-9999</p>
+          <p>@streetlab</p>
+          <p>streetlab@gmail.com</p>
+        </div>
       </div>
     </footer>
   );

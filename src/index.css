@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+/* 
 @keyframes infinitySlide {
   0% {
     transform: translateX(0%);
@@ -42,8 +42,8 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
-  }
-}
+  } */
+
 body {
   background-image: url(/assets/img/Untitled\ design.png);
   background-position: center;
@@ -60,90 +60,11 @@ main h1 {
   width: 100%;
   text-align: start;
   padding: 0 20px 0 50px;
-  color: rgb(100, 169, 31);
+  color: #64a91f;
   box-shadow: rgb(124, 252, 0) 0px 2px 4px -2px;
   border-radius: 5px;
   background-color: white;
   animation: dropLeft 2s;
-}
-
-.item {
-  width: 300px;
-  height: 450px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  cursor: pointer;
-  position: relative;
-  animation: dropLeft alternate;
-  background-color: white;
-}
-
-.i01 {
-  animation-duration: 3s;
-}
-.i02 {
-  animation-duration: 4s;
-}
-.i03 {
-  animation-duration: 5s;
-}
-
-.btn-open {
-  font-weight: bold;
-  color: rgb(124, 252, 0);
-  border: 1px solid rgb(124, 252, 0);
-  transition: all 300ms ease-in;
-  background-color: white;
-  width: 80px;
-  padding: 7px;
-  cursor: pointer;
-  border-radius: 50px;
-  position: absolute;
-  top: 400px;
-  left: 190px;
-}
-
-.btn-open:hover {
-  background: linear-gradient(45deg, rgb(124, 252, 0), rgb(62, 123, 0));
-  border: 1px solid white;
-  color: white;
-}
-.btn-open:focus {
-  background: linear-gradient(45deg, rgb(124, 252, 0), rgb(62, 123, 0));
-  border: 1px solid white;
-  color: white;
-}
-
-.picture-item {
-  background-image: url(/assets/img/mirnus_masculino_camiseta_new_trip_preto_0111-e0d25d579d3ca5616416207437832025-640-0.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50%;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-  animation-delay: 5s;
-}
-
-.i02 .picture-item {
-  background-image: url(/assets/img/verde-limao--926x926.png);
-}
-.see-plus {
-  background-image: url(/assets/img/em-breve.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.about-item {
-  padding: 20px;
-  margin-top: 10px;
-  color: rgb(100, 169, 31);
-}
-.about-item p {
-  font-style: italic;
-  margin-top: 10px;
 }
 
 .grid-product {
@@ -159,125 +80,6 @@ main h1 {
 /* FOOTER */
 
 /* Inpecionar item */
-.item {
-  position: relative;
-}
-
-.modal-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.modal-item {
-  z-index: 6000000;
-  width: 100%;
-  height: 60vh;
-  opacity: 1;
-  transform: scale(0.1);
-  transition: all 300ms ease-in-out;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-}
-
-.btn-close {
-  border: 0;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transition: all 100ms ease-in;
-  cursor: pointer;
-  z-index: 1000;
-}
-.btn-close:hover {
-  transform: scale(1.2);
-}
-.btn-close:focus {
-  transform: scale(1.2);
-}
-
-.open {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.info-item {
-  padding: 30px;
-}
-
-.colors {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.color-product {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-left: 10px;
-  border: 1px solid rgb(124, 252, 0);
-  cursor: pointer;
-  transition: all 300ms ease;
-}
-.color-product:hover {
-  transform: scale(1.2);
-}
-.color-product:focus {
-  transform: scale(1.2);
-}
-.black {
-  background-color: black;
-}
-.white {
-  background-color: white;
-}
-.purple {
-  background-color: purple;
-}
-
-h2,
-h3,
-p {
-  color: rgb(100, 169, 31);
-}
-
-.modal-flex h2 {
-  font-size: 35px;
-  margin-bottom: 30px;
-  box-shadow: rgb(124, 252, 0) 0px 2px 4px -2px;
-  border-radius: 5px;
-}
-.modal-flex h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 80px;
-}
-.modal-flex p {
-  font-style: italic;
-}
-.talk-me {
-  margin-bottom: 30px;
-}
-
-.talk-me button {
-  text-decoration: none;
-  font-size: 16px;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: rgb(124, 252, 0);
-  border-radius: 50px;
-  border: 2px solid rgb(124, 252, 0);
-  padding: 13px 25px;
-  margin-top: 20px;
-  transition: all 300ms ease-in;
-  cursor: pointer;
-}
-
-.talk-me button:hover {
-  background: linear-gradient(45deg, rgb(124, 252, 0), rgb(62, 123, 0));
-  border: 2px solid white;
-  color: white;
-}
 
 /* RESPONSIVO */
 
@@ -503,4 +305,38 @@ p {
   .manual-btn:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.input-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.438);
+  padding-left: 25px;
+  width: 100%;
+  font-size: 20px;
+  max-width: 500px;
+}
+
+.lupa {
+  margin-left: -35px;
+  background-color: #64a91f;
+  padding: 3px;
+  width: 50px;
+  text-align: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.lupa img {
+  max-width: 25px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #009c2f;
 }

@@ -26,7 +26,7 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: #64a91f;
+  background-color: #000000;
 }
 
 .modal-description-content {
@@ -37,6 +37,7 @@
 
 .color-product-selected {
   transform: scale(1.2);
+  border: 1px solid greenyellow !important;
 }
 
 .sizes {
@@ -52,22 +53,101 @@
   justify-content: center;
   font-family: sans-serif;
   font-weight: bold;
-  color: rgb(100, 169, 31);
+  color: rgb(0, 0, 0);
   margin-left: 10px;
-  border: 1px solid rgb(124, 252, 0);
-  background-color: rgba(128, 128, 128, 0.265);
+  border: 1px solid rgb(122, 122, 122);
   cursor: pointer;
   transition: all 300ms ease;
+  border-radius: 6px;
 }
 
 .size-product:hover {
-  background-color: rgba(100, 169, 31, 0.366);
+  background-color: #79a84ac2;
 }
 
 .size-product:focus {
-  background-color: rgba(100, 169, 31, 0.366);
+  background-color: #79a84ac2;
 }
 
 div.size-product-selected {
-  background-color: #64a91f5d;
+  background-color: #79a84ac2;
+  color: white;
+}
+
+.name-product {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 100;
+  color: #696969;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.colors {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.color-product {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px solid rgba(134, 134, 134, 0.418);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.color-product:hover {
+  transform: scale(1.2);
+}
+.color-product:focus {
+  transform: scale(1.2);
+}
+.info-item {
+  height: 100%;
+  padding: 10px;
+}
+.info-item .description {
+  max-width: 330px;
+}
+
+.info-item .price-product {
+  color: rgb(133, 199, 68);
+}
+
+.talk-me {
+  display: flex;
+  width: 100%;
+  height: 45%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.talk-me button {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(114, 114, 114);
+  background-color: white;
+  padding: 13px 25px;
+  border-radius: 6px;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+  margin-left: -20px;
+  width: 90%;
+}
+
+.talk-me button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.info-item p.price-product {
+  margin-bottom: 30px;
 }

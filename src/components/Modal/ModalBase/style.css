@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 900;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,7 @@
   width: 100%;
   max-width: 800px;
   height: 600px;
+  z-index: 910;
 }
 
 .btn-close-modal {
@@ -23,6 +24,6 @@
   top: 15px;
   left: 95%;
   font-size: 30px;
-  color: greenyellow;
+  color: rgba(0, 0, 0, 0.829);
   cursor: pointer;
 }

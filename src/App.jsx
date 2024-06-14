@@ -4,6 +4,7 @@ import products from "./assets/DB/produtos";
 import NavBar from "./components/navBar";
 import { useState, useEffect } from "react";
 import ModalDescription from "./components/Modal/ModalDescription";
+import { SplashArt } from "./components/splashArtes";
 
 function App() {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -23,15 +24,22 @@ function App() {
   }
   return (
     <>
+      <SplashArt />
       <NavBar />
-      <main>
+      <div className="input-search">
+        {" "}
         <input
+          placeholder="Buscar produtos"
           type="text"
           onChange={(event) => {
             setBanana(event.target.value);
           }}
         ></input>
-        <h1>Produtos</h1>
+        <div className="lupa">
+          <img src="src/components/icons/lupa.png" alt="" />
+        </div>
+      </div>
+      <main>
         <ModalDescription
           isOpen={isOpenModal}
           setIsOpen={setIsOpenModal}
@@ -39,6 +47,7 @@ function App() {
           price={modalContent?.preço}
           types={modalContent?.types}
           sizes={modalContent?.sizes}
+          description={modalContent?.descricao}
         />
 
         <div className="grid-product">
