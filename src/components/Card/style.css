@@ -3,6 +3,7 @@
   height: 50%;
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  overflow: hidden;
 }
 
 .picture-item img {
@@ -19,6 +20,7 @@
   cursor: pointer;
   position: relative;
   background-color: white;
+  overflow: hidden;
 }
 
 button.btn-open {
@@ -32,7 +34,7 @@ button.btn-open {
   cursor: pointer;
   border-radius: 1px;
   position: absolute;
-  top: 400px;
+  top: 398px;
   left: 0px;
 }
 

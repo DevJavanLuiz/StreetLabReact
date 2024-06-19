@@ -49,26 +49,27 @@ function App() {
           sizes={modalContent?.sizes}
           description={modalContent?.descricao}
         />
-
-        <div className="grid-product">
-          {products.camisas
-            .filter((camisa) =>
-              camisa.nome.toLowerCase().includes(banana.toLowerCase())
-            )
-            .map((camisa) => {
-              return (
-                <Card
-                  key={camisa.id}
-                  name={camisa.nome}
-                  cost={camisa.preço}
-                  imgUrl={camisa.types[0].imgsUrl[0]}
-                  seeMore={() => {
-                    setModalSelected(camisa.id);
-                    setIsOpenModal(true);
-                  }}
-                />
-              );
-            })}
+        <div className="grid-flex">
+          <div className="grid-product">
+            {products.camisas
+              .filter((camisa) =>
+                camisa.nome.toLowerCase().includes(banana.toLowerCase())
+              )
+              .map((camisa) => {
+                return (
+                  <Card
+                    key={camisa.id}
+                    name={camisa.nome}
+                    cost={camisa.preço}
+                    imgUrl={camisa.types[0].imgsUrl[0]}
+                    seeMore={() => {
+                      setModalSelected(camisa.id);
+                      setIsOpenModal(true);
+                    }}
+                  />
+                );
+              })}
+          </div>
         </div>
       </main>
       <Footer />
