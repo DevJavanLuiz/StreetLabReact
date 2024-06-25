@@ -26,7 +26,7 @@ function App() {
     <>
       <SplashArt />
       <NavBar />
-      <div className="input-search">
+      <div className="input-search just-desktop">
         {" "}
         <input
           placeholder="Buscar produtos"
@@ -39,7 +39,20 @@ function App() {
           <img src="src/components/icons/lupa.png" alt="" />
         </div>
       </div>
-      <main>
+      <div className="input-search just-mobile">
+        {" "}
+        <input
+          placeholder="Buscar produtos"
+          type="text"
+          onChange={(event) => {
+            setBanana(event.target.value);
+          }}
+        ></input>
+        <div className="lupa">
+          <img src="src/components/icons/lupa.png" alt="" />
+        </div>
+      </div>
+      <main className="container">
         <ModalDescription
           isOpen={isOpenModal}
           setIsOpen={setIsOpenModal}
@@ -49,27 +62,25 @@ function App() {
           sizes={modalContent?.sizes}
           description={modalContent?.descricao}
         />
-        <div className="grid-flex">
-          <div className="grid-product">
-            {products.camisas
-              .filter((camisa) =>
-                camisa.nome.toLowerCase().includes(banana.toLowerCase())
-              )
-              .map((camisa) => {
-                return (
-                  <Card
-                    key={camisa.id}
-                    name={camisa.nome}
-                    cost={camisa.preço}
-                    imgUrl={camisa.types[0].imgsUrl[0]}
-                    seeMore={() => {
-                      setModalSelected(camisa.id);
-                      setIsOpenModal(true);
-                    }}
-                  />
-                );
-              })}
-          </div>
+        <div className="grid-product">
+          {products.camisas
+            .filter((camisa) =>
+              camisa.nome.toLowerCase().includes(banana.toLowerCase())
+            )
+            .map((camisa) => {
+              return (
+                <Card
+                  key={camisa.id}
+                  name={camisa.nome}
+                  cost={camisa.preço}
+                  imgUrl={camisa.types[0].imgsUrl[0]}
+                  seeMore={() => {
+                    setModalSelected(camisa.id);
+                    setIsOpenModal(true);
+                  }}
+                />
+              );
+            })}
         </div>
       </main>
       <Footer />

@@ -42,7 +42,7 @@
 
 .sizes {
   display: flex;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
 }
 
 .size-product {
@@ -62,10 +62,6 @@
 }
 
 .size-product:hover {
-  background-color: #79a84ac2;
-}
-
-.size-product:focus {
   background-color: #79a84ac2;
 }
 
@@ -90,6 +86,7 @@ h4 {
 .colors {
   display: flex;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .color-product {
@@ -104,9 +101,7 @@ h4 {
 .color-product:hover {
   transform: scale(1.2);
 }
-.color-product:focus {
-  transform: scale(1.2);
-}
+
 .info-item {
   height: 100%;
   padding: 10px;
@@ -120,11 +115,10 @@ h4 {
 }
 
 .talk-me {
-  display: flex;
   width: 100%;
-  height: 45%;
+  margin-top: 30px;
+  display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .talk-me button {
@@ -139,7 +133,6 @@ h4 {
   border-radius: 6px;
   transition: all 300ms ease-in;
   cursor: pointer;
-  margin-left: -20px;
   width: 90%;
 }
 
@@ -150,4 +143,39 @@ h4 {
 
 .info-item p.price-product {
   margin-bottom: 30px;
+}
+
+@media (width <= 576px) {
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 300px;
+    height: 50%;
+    max-height: 550px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modal-description-content {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
 }

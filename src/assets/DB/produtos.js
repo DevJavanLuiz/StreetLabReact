@@ -64,7 +64,7 @@ export default {
     },
     {
       id: "card02",
-      nome: "Street Lab Oversize",
+      nome: "Street Lab Over",
       preço: 919.99,
       descricao:
         "Camisa das ruas para deixar seu corre com estilo. Pano 100% algodão com fibra de cabra kkk",

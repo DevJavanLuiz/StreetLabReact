@@ -20,10 +20,29 @@
 }
 
 .btn-close-modal {
-  position: relative;
-  top: 15px;
-  left: 95%;
-  font-size: 30px;
+  position: absolute;
+  font-size: 40px;
+  top: 120px;
+  margin-left: -38px;
   color: rgba(0, 0, 0, 0.829);
   cursor: pointer;
+}
+
+@media (width <= 576px) {
+  .modal-body {
+    width: 90%;
+    max-width: 800px;
+    height: 90vh;
+    z-index: 910;
+    position: relative;
+  }
+
+  .btn-close-modal {
+    position: absolute;
+    font-size: 35px;
+    cursor: pointer;
+    top: 0;
+    left: 38px;
+    z-index: 90000;
+  }
 }
