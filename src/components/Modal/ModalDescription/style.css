@@ -186,7 +186,7 @@ h4 {
   margin-bottom: 30px;
 }
 
-@media (width <= 576px) {
+@media (width <= 790px) {
   .slider-container {
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@ h4 {
   .swiper {
     width: 100%;
     max-width: 300px;
-    height: 50%;
+    height: 100%;
     max-height: 550px;
   }
 
@@ -225,4 +225,5 @@ h4 {
   .name-product {
     margin-top: 15px;
   }
+
 }
