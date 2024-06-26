@@ -4,7 +4,7 @@ export default function Card({ name, cost, imgUrl, seeMore }) {
   return (
     <div className="item i01">
       <div className="picture-item">
-        <img src={imgUrl} alt="" />
+        <img loading="lazy" src={imgUrl} alt="" />
       </div>
       <div className="about-item">
         <h2>{name}</h2>

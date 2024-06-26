@@ -235,49 +235,7 @@ input:focus {
 
   /* Inpecionar item */
 
-  h4 {
-    font-style: italic;
-    font-weight: 100;
-    color: #696969;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .colors {
-    display: flex;
-    margin-bottom: 20px;
-  }
-
-  .color-product {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin-left: 10px;
-    border: 1px solid rgba(134, 134, 134, 0.418);
-    cursor: pointer;
-    transition: all 300ms ease;
-  }
-  .color-product:hover {
-    transform: scale(1.2);
-  }
-  .color-product:focus {
-    transform: scale(1.2);
-  }
-  .info-item {
-    height: 100%;
-    padding: 10px;
-  }
-  .info-item .description {
-    max-width: 330px;
-  }
-
-  .info-item .price-product {
-    color: rgb(133, 199, 68);
-  }
-
-  .info-item p.price-product {
-    margin-bottom: 30px;
-  }
+  
 
   #root > div > main > div.modal-bg > div > div > div:nth-child(1) > div {
     height: 100%;

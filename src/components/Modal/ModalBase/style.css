@@ -13,19 +13,21 @@
 
 .modal-body {
   background-color: white;
-  width: 100%;
+  width: 90vw;
   max-width: 800px;
   height: 600px;
   z-index: 910;
+  position: relative;
 }
 
 .btn-close-modal {
   position: absolute;
   font-size: 40px;
-  top: 120px;
-  margin-left: -38px;
+  top: 10px;
+  left: 10px;
   color: rgba(0, 0, 0, 0.829);
   cursor: pointer;
+  z-index: 90000;
 }
 
 @media (width <= 576px) {
@@ -34,15 +36,12 @@
     max-width: 800px;
     height: 90vh;
     z-index: 910;
-    position: relative;
   }
 
   .btn-close-modal {
     position: absolute;
     font-size: 35px;
     cursor: pointer;
-    top: 0;
-    left: 38px;
     z-index: 90000;
   }
 }

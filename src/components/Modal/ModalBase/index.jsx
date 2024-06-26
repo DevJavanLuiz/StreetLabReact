@@ -11,18 +11,17 @@ export default function Modal({ children, isOpen, setIsOpen }) {
       {isOpen && (
         <div className="modal-bg">
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            className="modal-body"
+            initial={{ opacity: 0, translateX: "20vw" }}
+            animate={{ opacity: 1, translateX: "0vw" }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <div className="modal-body ">
-              <MaterialSymbolsCancelOutline
-                className="btn-close-modal"
-                onClick={handleSetIsOpen}
-              />
+            <MaterialSymbolsCancelOutline
+              className="btn-close-modal"
+              onClick={handleSetIsOpen}
+            />
 
-              {children}
-            </div>
+            {children}
           </motion.div>
         </div>
       )}

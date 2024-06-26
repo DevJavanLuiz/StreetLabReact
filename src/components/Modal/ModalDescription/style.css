@@ -72,7 +72,7 @@ div.size-product-selected {
 
 .name-product {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -85,7 +85,6 @@ h4 {
 
 .colors {
   display: flex;
-  margin-bottom: 20px;
   padding: 10px;
 }
 
@@ -116,7 +115,7 @@ h4 {
 
 .talk-me {
   width: 100%;
-  margin-top: 30px;
+  margin-top: auto;
   display: flex;
   justify-content: center;
 }
@@ -139,6 +138,48 @@ h4 {
 .talk-me button:hover {
   background-color: #000000;
   color: white;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 100;
+  color: #696969;
+  font-size: 14px;
+}
+
+.colors {
+  display: flex;
+}
+
+.color-product {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px solid rgba(134, 134, 134, 0.418);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.color-product:hover {
+  transform: scale(1.2);
+}
+.color-product:focus {
+  transform: scale(1.2);
+}
+.info-item {
+  height: 100%;
+  padding: 10px 25px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-item .description {
+  max-width: 330px;
+}
+
+.info-item .price-product {
+  color: rgb(133, 199, 68);
 }
 
 .info-item p.price-product {
@@ -177,5 +218,11 @@ h4 {
     display: grid;
     width: 100%;
     height: 100%;
+  }
+  .talk-me button {
+    width: 100%;
+  }
+  .name-product {
+    margin-top: 15px;
   }
 }
