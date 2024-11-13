@@ -36,7 +36,7 @@ function App() {
           }}
         ></input>
         <div className="lupa">
-          <img src="src/components/icons/lupa.png" alt="" />
+          <img src="public/icons/lupa.png" alt="" />
         </div>
       </div>
       <div className="input-search just-mobile">
@@ -49,7 +49,7 @@ function App() {
           }}
         ></input>
         <div className="lupa">
-          <img src="src/components/icons/lupa.png" alt="" />
+          <img src="public/icons/lupa.png" alt="" />
         </div>
       </div>
       <main className="container">

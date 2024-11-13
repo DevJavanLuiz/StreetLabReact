@@ -6,10 +6,11 @@ footer {
 }
 .content-footer {
   display: flex;
+  align-items: center;
 }
 .imgs-text img {
-  width: 20px;
-  margin-top: 11px;
+  width: 15px;
+  margin-top: 16px;
 }
 .imgs-text {
   display: flex;

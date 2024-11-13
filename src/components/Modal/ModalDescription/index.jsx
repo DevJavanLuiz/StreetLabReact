@@ -5,7 +5,6 @@ import "swiper/css";
 import Modal from "../ModalBase";
 import "./style.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export default function ModalDescription({
@@ -17,15 +16,14 @@ export default function ModalDescription({
   types = [],
   name,
 }) {
-  const [color, setColor] = useState("");
+  let color = "";
   const [sizeSelected, setSizeSelected] = useState("");
 
   function validSend() {
     if (!sizeSelected) return toast.info("Selecione um tamanho!");
-    if (!color) return toast.info("Selecione uma cor!");
 
     window.open(
-      `https://api.whatsapp.com/send?phone=558188550476&text=Cobaia001: Gostaria de obter a(o) ${name} que está custando ${price} com a cor ${color} com tamanho ${sizeSelected}`,
+      `https://api.whatsapp.com/send?phone=558185187616&text=*COBAIA-001*: Olá, eu estou interessado(a) no item *${name}* que está custando *R$${price}*, eu gostaria da cor *${color}* e com tamanho *${sizeSelected}*.`,
       "_blank"
     );
   }
@@ -65,16 +63,12 @@ export default function ModalDescription({
           <p>COR</p>
           <div className="colors">
             {types.map((type) => {
+              color = type?.name;
               return (
                 <div
-                  className={`color-product ${
-                    type.name === color ? "color-product-selected" : ""
-                  }`}
+                  className={"color-product"}
                   key={type?.name}
                   style={{ backgroundColor: type?.hex }}
-                  onClick={() => {
-                    setColor(type?.name);
-                  }}
                 ></div>
               );
             })}

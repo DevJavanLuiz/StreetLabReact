@@ -21,6 +21,8 @@
   position: relative;
   background-color: #ffffff;
   overflow: hidden;
+  max-width: 280px;
+  max-height: 550px;
 }
 
 button.btn-open {

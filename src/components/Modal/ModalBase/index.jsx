@@ -1,4 +1,4 @@
-import { MaterialSymbolsCancelOutline } from "../../icons/close";
+import { MaterialSymbolsCancelOutline } from "../../../../public/icons/close";
 import "./style.css";
 import { motion } from "framer-motion";
 

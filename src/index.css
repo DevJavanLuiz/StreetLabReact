@@ -10,44 +10,6 @@
   -webkit-text-size-adjust: 100%; /* Para WebKit (Chrome, Safari, Edge) */
   touch-action: manipulation;
 }
-/* 
-@keyframes infinitySlide {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  75% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes dropLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-600px);
-    }
-    60% {
-      opacity: 0;
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0px);
-        }
-        }
-        @keyframes dropBottom {
-          0% {
-            opacity: 0;
-            transform: translateY(-600px);
-            }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-    } */
 
 main {
   display: flex;
@@ -121,13 +83,6 @@ input:focus {
   outline: none;
   border-color: #009c2f;
 }
-/* FOOTER */
-
-/* Inpecionar item */
-
-/* RESPONSIVO */
-
-/* PHONE */
 
 .just-mobile {
   display: none;

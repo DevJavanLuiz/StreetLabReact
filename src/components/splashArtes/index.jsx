@@ -24,7 +24,7 @@ export function SplashArt() {
           type: "spring",
         }}
         className="logo-splash"
-        src="src/components/icons/logo.png"
+        src="public/icons/logo.png"
         alt=""
       />
       <div className="splash-image"></div>

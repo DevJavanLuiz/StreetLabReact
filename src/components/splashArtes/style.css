@@ -4,6 +4,7 @@
   overflow-x: hidden;
 }
 .splash-image {
+  background-image: url("public/icons/_MG_0272-1 cort.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -46,18 +47,23 @@
     filter: brightness(0%);
   }
   25% {
-    background-image: url("../icons/20240608_185913650_iOS.jpg");
+    background-image: url("public/icons/_MG_0272-1 cort.jpg");
     filter: brightness(50%);
   }
 
   50% {
-    background-image: url("../icons/20240608_190157910_iOS.jpg");
+    background-image: url("public/icons/20240608_190157910_iOS.jpg");
+    filter: brightness(50%);
+  }
+
+  75% {
+    background-image: url("public/icons/1412.jpg");
     filter: brightness(50%);
   }
 
   100% {
     filter: brightness(50%);
-    background-image: url("../icons/20240608_185530820_iOS.jpg");
+    background-image: url("public/icons/20240608_185913650_iOS.jpg");
   }
 }
 
